@@ -1,0 +1,27 @@
+package optical.controller
+
+import optical.controller.IndexController;
+import grails.test.mixin.TestFor
+import spock.lang.Specification
+
+/**
+ * See the API for {@link grails.test.mixin.web.ControllerUnitTestMixin} for usage instructions
+ */
+@TestFor(IndexController)
+class IndexControllerSpec extends Specification {
+
+    def setup() {
+    }
+
+    def cleanup() {
+    }
+
+    void "test something"() {
+		when:
+		controller.index()
+
+		then:
+		response.text == 'hello'
+
+    }
+}
